@@ -7,9 +7,10 @@
     <title>Curriculum Vitae</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 </head>
 
-<body>
+<body id="autopdf">
     <div class="container">
         <div class="cabecera">
             <div class="nombre_puesto">
@@ -166,6 +167,24 @@
             </section>
         </div>
     </div>
+    <!-- <button id="btnPDF">Descargar PDF</button> -->
+
+  <script>
+    document.getElementById("btnPDF").addEventListener("click", function () {
+      const elemento = document.getElementById("autopdf");
+
+      html2pdf()
+        .from(elemento)
+        .set({
+          margin: 0,
+          filename: "documento.pdf",
+          image: { type: "jpeg", quality: 0.98 },
+          html2canvas: { scale: 1 },
+          jsPDF: { unit: "in", format: "letter", orientation: "portrait" }
+        })
+        .save();
+    });
+  </script>
 </body>
 
 </html>
