@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fff;
+  color: #fff;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+header {
+  text-align: center;
+  background-color: #0034f1;
+}
+
+header h1,
+header h2 {
+  font-weight: normal;
+  line-height: 1;
+}
+
+header h2 {
+  margin-top: 5px;
+  opacity: 0.5;
+}
+
+h1{
+  font-size: 4em;
+}
+
+h2{
+  font-size: 1.5em;
+}
+
+h3{
+  font-size: 1.5em;
+  margin-bottom: 1%;
+}
+
+.experiencia-element {
+  margin-bottom: 5%;
+}
+
+.experiencia-element-content, .experiencia-item {
+  margin-top: 3%;
+}
+
+a:any-link{
+  color: #88a4f1;
+}
+
+li a:any-link{
+  color: #92afff;
+}
+
+.habilidades i{
+    font-size: 0.8em;
+    color: #6088a9;
+    background: #fff;
+    border-radius: 2em;
+    padding: 2px;
+    width: 1.5em;
+    height: 1.5em;
+    text-align: center;
+    vertical-align: center;
+    line-height: 1.5em; 
+}
+
+.experiencia i{
+    font-size: 0.8em;
+    color: #fff;
+    background: #6088a9;
+    border-radius: 2em;
+    padding: 2px;
+    width: 1.5em;
+    height: 1.5em;
+    text-align: center;
+    vertical-align: center;
+    line-height: 1.5em; 
+}
+
+
+.container{
+  background-color: #011929;
+  margin: 0 auto;
+   position: relative;
+  z-index: 1;
+}
+
+.cabecera{
+  position: relative;
+}
+
+.cabecera::before {
+ content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #6088a9; /* Reemplaza 'ruta_de_la_imagen.jpg' con la ruta de tu imagen */
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1; /* Coloca el pseudo-elemento detrás del contenido del contenedor */
+}
+
+.contenedor_foto_perfil img{
+  width: 100%; /* La imagen ocupa el 100% del ancho del contenedor */
+  height: auto; /* Altura automática para mantener la proporción */
+  display: block; /* La imagen se comporta como un bloque para evitar espacio adicional */
+}
+
+.nombre_puesto{
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 8rem;
+  margin-left: 6rem;
+  margin-bottom: 5rem;
+  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+.contenido_cv{
+  display: flex;
+  width: 100%;
+}
+
+.habilidades{
+  display: inline-block;
+  vertical-align: top;
+  background-color: #00496b;
+  padding: 5%;
+  width: 28%;
+}
+
+.habilidades ul{
+  margin-left: 5%;
+}
+
+
+.carta_presentacion{
+  text-align: left;
+}
+
+.grafico {
+  width: 34px; /* Modifica este valor para cambiar el tamaño del gráfico */
+  height: 34px; /* Modifica este valor para cambiar el tamaño del gráfico */
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 1%;
+}
+
+.sector {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  transform-origin: left;
+}
+
+#sector1 {
+  transform: rotate(0deg);
+  background-color: #f91c8a; /* Color del sector 1 */
+}
+
+#sector2 {
+  transform: rotate(120deg);
+  background-color: #2d0b7c; /* Color del sector 2 */
+}
+
+#sector3 {
+  transform: rotate(240deg);
+  background-color: #58d1bc; /* Color del sector 3 */
+}
+
+.habilidad{
+  display: inline-block;
+  margin-top: 1%;
+  vertical-align: middle;
+}
+
+.experiencia{
+  display: inline-block;
+  vertical-align: middle;
+  padding: 5%;
+  width: 50%;
+}
+
+.experiencia h3{
+  text-align: left;
+}
+
+.course-info {
+  display: flex;
+  justify-content: space-between; /* Pushes items to edges */
+  align-items: flex-start; /* Aligns to top */
+  width: 100%;
+}
+
+.nombre_empresa{
+  display: inline-block;
+  vertical-align: top;
+  width: 55%;
+}
+
+.año_puesto{
+  display: inline-block;
+  vertical-align: top;
+  text-align: right;
+  width: 40%;
+}
+
+.descripcion_puesto{
+  margin-top:2%;
+  text-align: left;
+  list-style-type: disc; /* or square/circle depending on preference */
+  margin-left: 20px; /* Ensures indentation */
+  padding-left: 20px;
+}
+
+.nombre-propio {
+  font-style: italic;
+}
+
